@@ -1,9 +1,9 @@
 import React from 'react';
-import GetWindowSize from '../../scripts/GetWindowSize';
+import useWindowSize from '../../scripts/useWindowSize';
 import Wrapper from '../Wrapper';
 
 const App: React.FC = () => {
-  const size = GetWindowSize();
+  const size = useWindowSize();
   const css = {
     width: size.width,
     height: size.height

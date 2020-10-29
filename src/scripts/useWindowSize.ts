@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react'
-interface IWindowSize{
+interface WindowSize{
     width: number,
     height: number
   }
-  function GetWindowSize (): IWindowSize {
+  function useWindowSize (): WindowSize {
     const [windowSize,setWindowSize] = useState({
       width: 0,
       height: 0
@@ -23,5 +23,5 @@ interface IWindowSize{
   }
   
   
-  export type {IWindowSize}
-  export default GetWindowSize;
+  export type {WindowSize}
+  export default useWindowSize;

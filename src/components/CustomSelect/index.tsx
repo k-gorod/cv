@@ -19,9 +19,11 @@ class CustomSelect extends React.Component<SelectProps>{
         })
     }
     closeSelect = () => {
-        this.setState({
-            active:false
-        })
+        if(this.state.active){
+            this.setState({
+                active:false
+            })
+        }
     }
     componentDidMount(){
         globalFunctions.closeSelect = this.closeSelect;
@@ -37,7 +39,8 @@ class CustomSelect extends React.Component<SelectProps>{
                 pos={this.state.active?i:0} 
                 value={optsArr[i]} 
                 height={this.props.height} 
-                closeSelect={this.closeSelect}/>
+                closeSelect={this.closeSelect}
+                disable={i>1}/>
             )
         }
         return (

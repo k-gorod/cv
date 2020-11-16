@@ -4,5 +4,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    
+    & * {
+        overflow: -moz-scrollbars-none;
+    }
 }
+::-webkit-scrollbar { display: none;}

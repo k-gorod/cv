@@ -1,4 +1,7 @@
 .cv__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
     height:100%;
     width:10%;
     transition: all linear 0.2s;
@@ -11,14 +14,13 @@
     }
     &-active{
         box-shadow:  0 0 10px rgba(0, 0, 0, 0.624);
-        background: rgba(55, 100, 55, 0.309);
+        background: rgba(71, 163, 71, 0.309);
         width:30%;
     }
     &__point{
-        color: rgb(127, 247, 151);
-        text-shadow: 2px 2px 5px rgba(21, 255, 0, 0.94);
-        transition: linear 0.2s opacity;
-        margin: 10px;
+        color: rgb(70, 218, 100);
+        text-shadow: 2px 2px 5px rgba(21, 255, 0, 0.8);
+        margin: 10px 0;
         font-size: 30px;
         cursor: pointer;
         user-select: none;

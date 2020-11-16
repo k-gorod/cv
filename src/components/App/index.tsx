@@ -8,9 +8,10 @@ const App: React.FC = () => {
     width: size.width,
     height: size.height
   };
+  
   return (
-    <div className="App">
-      <Wrapper style={css} windowWidth={size.width}/>
+    <div className="App" >
+      <Wrapper style={css} windowWidth={size.width} />
     </div>
   );
 }

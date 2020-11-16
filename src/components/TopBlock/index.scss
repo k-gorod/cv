@@ -1,0 +1,16 @@
+.topBlock{
+    display: grid;
+    justify-content: center;
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    &__image{
+        background: url('../../images/Kostya3.jpg') center/cover no-repeat;
+        margin: 10px;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+    }
+    
+}

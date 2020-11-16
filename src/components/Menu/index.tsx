@@ -23,9 +23,9 @@ const Menu : React.FC<menuProps> = (props) => {
         }
         return res;
     }
-  
+   
     return (
-        <div className={`cv__menu ${props.isOpen&&'cv__menu-active'}`}>
+        <div className={`cv__menu ${props.isOpen?'cv__menu-active':""}`}>
             <nav className='cv__menu__nav'>
                 {menuPoints()}
             </nav>

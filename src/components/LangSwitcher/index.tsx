@@ -1,5 +1,5 @@
 import React from 'react'
-import { arrayOfOpts } from '../../constatns'
+import { arrayOfLangOpts } from '../../constatns'
 import CustomSelect from '../CustomSelect'
 import './index.scss'
 
@@ -11,7 +11,7 @@ const LangSwitcher :  React.FC = () => {
     
     return (
         <div className='cv__lang' onClick={clickHandler}>
-            <CustomSelect options={arrayOfOpts} height={25}/>
+            <CustomSelect options={arrayOfLangOpts} height={25}/>
         </div>
     )
 }

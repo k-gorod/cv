@@ -4,6 +4,7 @@ import { WindowSize } from '../../scripts/useWindowSize';
 import LangSwitcher from '../LangSwitcher';
 import Menu from '../Menu';
 import './index.scss'
+import Content from '../Content';
 
 
 interface props {
@@ -14,7 +15,7 @@ interface props {
 const  Wrapper: React.FC<props> = (props) => {
     const [menuIsOpen,setMenuIsOpen] = useState(false)
     const clickHandler = (e: any) => {
-        if(!e.target.classList.contains('select__opt')&&!e.target.classList.contains('select__wrp'))globalFunctions.closeSelect();//привезять к getSelect
+        if(!e.target.classList.contains('select__opt')&&!e.target.classList.contains('select__wrp'))globalFunctions.closeSelect();
         
     }
     const mouseMoving = (e: any) => {
@@ -27,12 +28,15 @@ const  Wrapper: React.FC<props> = (props) => {
             setMenuIsOpen(false)
         }
     }
+     
     return (
-        <div style={props.style} className='cv__wrapper' onClick={(e)=>{clickHandler(e)}} onMouseMove={(e)=>{mouseMoving(e)}}>
+        <div style={props.style} className='cv__wrapper' onClick={clickHandler} onMouseMove={mouseMoving}>
             
             {/* <div className='cv__wrapper__img'></div> */}
             <LangSwitcher />
             <Menu isOpen={menuIsOpen}/>
+            <Content />
+            
         </div>
     );
 }

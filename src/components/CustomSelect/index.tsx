@@ -1,5 +1,5 @@
 import React from 'react';
-import { globalFunctions } from '../../constatns';
+import { globalFunctions } from '../../constants';
 import store from '../../store';
 import './index.scss'
 import Opt from './Opt';

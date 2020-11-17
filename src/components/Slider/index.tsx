@@ -26,6 +26,9 @@ const Silder: React.FC<SliderProps> = (props) => {
     }
     return (
         <div className='topBlock__slider slider'>
+            <div className='slider__counter'>
+                <p>{activeSlide+1}/{data.length}</p>
+            </div>
             <svg className="slider__arrowLeft" viewBox="0 0 5 9" onClick={leftArrowClick}>
                 <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
             </svg>

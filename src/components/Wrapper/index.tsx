@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { globalFunctions } from '../../constatns';
+import { globalFunctions } from '../../constants';
 import { WindowSize } from '../../scripts/useWindowSize';
 import LangSwitcher from '../LangSwitcher';
 import Menu from '../Menu';
@@ -9,10 +9,12 @@ import Content from '../Content';
 
 interface props {
     style: WindowSize,
-    windowWidth: number
+    windowWidth: number,
+    lang: string
 }
 
 const  Wrapper: React.FC<props> = (props) => {
+    
     const [menuIsOpen,setMenuIsOpen] = useState(false)
     const clickHandler = (e: any) => {
         if(!e.target.classList.contains('select__opt')&&!e.target.classList.contains('select__wrp'))globalFunctions.closeSelect();

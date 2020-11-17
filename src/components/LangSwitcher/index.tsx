@@ -1,5 +1,5 @@
 import React from 'react'
-import { arrayOfLangOpts } from '../../constatns'
+import { arrayOfLangOpts } from '../../constants'
 import CustomSelect from '../CustomSelect'
 import './index.scss'
 

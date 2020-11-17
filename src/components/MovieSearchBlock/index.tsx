@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { t } from '../../scripts/translateText';
 import Silder from '../Slider';
 import './index.scss'
 interface resData {
@@ -36,9 +37,9 @@ const MovieSearchBlock: React.FC = () => {
     }
     return (
         <section className="cv__movieBlock movieBlock" onKeyPress={foo} >
-            <h2>Movie Search</h2>
-            <input className="movieBlock__input" type="text" ref={inputRef} placeholder='Enter movie name'/>
-            <input className="movieBlock__btn" type="button" value="Find" onClick={click} />
+            <h2>{t('search')}</h2>
+            <input className="movieBlock__input" type="text" ref={inputRef} placeholder={t('enter')}/>
+            <input className="movieBlock__btn" type="button" value={t('find')} onClick={click} />
             <Silder data={obj.Search}/>
         </section>
     )

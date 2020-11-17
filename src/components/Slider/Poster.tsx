@@ -17,7 +17,6 @@ const PosterImg: React.FC<posterImgProps>= (props)=>{
             <p>{props.data.Title}</p>
             <p>{props.data.Year}</p>
         </div>
-        
     )
 } 
 

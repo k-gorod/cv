@@ -41,7 +41,7 @@ export const translateData: TextLang = {
     Eng: "Education: "
   },
   exp :{
-    Ru: "Опыт работы: React разработчик в волантерской организации(2 месяца), JavaScript разработчик (Phaser 3)(1 месяц)",
+    Ru: "Опыт работы: React разработчик в волонтерской организации(2 месяца), JavaScript разработчик (Phaser 3)(1 месяц)",
     Eng: "Experience: React developer in volunteer organization(2 months), JavaScript developer (Phaser 3)(1 month) "
   },
   search :{
